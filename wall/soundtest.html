@@ -1,0 +1,30 @@
+<html>
+    <head><title>Sound text</title></head>
+    <body>
+        <div>
+            <button id="whoosh">Whoosh</button>
+            <button id="stop">Stop</button>
+            <button id="default">Default</button>
+        </div>
+        
+        <script>
+            audioWhoosh = new Audio();
+            audioWhoosh.src = "whoosh.wav";
+            audioStop = new Audio();
+            audioStop.src = "Windows Critical Stop.wav";
+            audioDefault = new Audio();
+            audioDefault.src = "Windows Default.wav";
+            
+            document.getElementById("stop").onclick = function () {
+                audioStop.play();        
+            };
+            document.getElementById("whoosh").onclick = function () {
+                audioWhoosh.play();        
+            };
+            document.getElementById("default").onclick = function () {
+                audioDefault.play();        
+            };
+            
+        </script>
+    </body>
+</html>
